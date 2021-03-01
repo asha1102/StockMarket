@@ -1,0 +1,62 @@
+<mat-card class="fullViewContainer">
+  
+<div class="container">
+    <!-- <div class="leftSection"> -->
+        
+          <mat-drawer-container class="leftSection" >
+              <mat-drawer #drawer mode="side" style="width:100px;">
+              
+                 <div class ="example-sideNav">
+                  <div style="width: 40px;  height: 30px; background-color: blue; color: white;width:50%; margin: 37px auto">
+              
+                    <mat-icon (click)="drawer.toggle()" style="margin-left: 5px;  margin-top: 2px;cursor:pointer">format_align_center</mat-icon>
+                </div>
+                    <div class="iconContainer">
+                        <!-- <mat-icon (click)="loadComponent()" style="color:blue" *ngFor = "let icon of componentArray ">{{icon.name}}</mat-icon> -->
+
+                       <mat-icon  class="iconStyle"  (click)="loadComponent()">home</mat-icon>
+                   
+                     <mat-icon class="iconStyle"  (click)="loadSettingComponent()">star_border</mat-icon> 
+                        <mat-icon class="iconStyle">schedule</mat-icon>
+                        <mat-icon class="iconStyle">delete</mat-icon>
+                  
+                </div>
+            </div>
+              </mat-drawer>
+              <!-- <mat-drawer>
+
+              </mat-drawer> -->
+              <div style="width: 40px;  height: 30px; background-color: blue; color: white;width:50%; margin:37px auto">
+                  <!-- <button type="button" mat-button (click)="drawer.toggle()"></button> -->
+                  <mat-icon (click)="drawer.toggle()" style="margin-left: 5px; margin-top: 2px;cursor:pointer">format_align_center</mat-icon>
+              </div>
+          </mat-drawer-container>
+        
+     
+    <!-- </div> -->
+    <div class="middleSection">
+      
+        <app-home *ngIf="showHomeComponent" ></app-home>
+        <app-setting *ngIf="showSettingComponent"></app-setting>
+    </div>
+    <div class="rightSection">
+        <h4 style="margin-left:10px"> My Investment</h4>
+        <mat-card style="height:250px"></mat-card>
+        <h4 style="margin-left:10px">Owned Properties</h4>
+        <div class="ownedProperty">
+            <mat-card style="margin-left:22px;margin-right:22px"></mat-card>
+            <mat-card style="margin-left:22px;margin-right:22px"></mat-card>
+        </div>
+        <h4 style="margin-left:10px">Recent Activities</h4>
+        <div class="recentActivityBox">
+            <mat-card style="margin-left:22px;margin-right:22px;height:30px"></mat-card>
+            <mat-card style="margin-left:22px;margin-right:22px;height:30px"></mat-card>
+
+        </div>
+    </div> 
+
+</div>
+
+</mat-card>
+
+

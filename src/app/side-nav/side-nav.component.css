@@ -1,0 +1,68 @@
+
+  .fullViewContainer{
+   overflow: auto;
+ background-color:lightgrey;
+   height:96%;
+   background-size: cover;
+  }
+
+  .container {
+height:94%;
+    display: grid; /* or inline-flex */
+    grid-template-columns:  [first] 100px [line2] 790px [line3] 350px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    width:65%;
+    padding-top: 40px;
+  
+
+  }
+  .leftSection{
+    
+      background-color: white;
+      border-radius: 25px 0 0 25px;
+      
+
+  }
+  .rightSection{
+  
+    background-color: white;
+    border-radius: 0 25px 25px 0;
+
+  }
+  .iconStyle:hover{
+      color:blue;
+      cursor: pointer;
+  }
+  .iconStyle{
+      color: grey;
+      font-size: 32px;
+  }
+  .middleSection{
+   
+    
+    background-color:#F0FFFF;
+      
+  }
+  .iconContainer{
+      display: grid;
+      grid-template-rows: 82px 82px 82px 82px ;
+      justify-content: center;
+  }
+  .example-sideNav{
+      display:grid;
+      grid-template-rows: [first] 200px [line2] auto;
+  }
+  .ownedProperty{
+      display: grid;
+      grid-template-rows: 150px 150px;
+      grid-row-gap: 19px;
+  }
+  .recentActivityBox{
+      display:grid;
+      grid-template-rows:  70px 70px;
+      grid-row-gap:10px;
+      margin-bottom:10px;
+  }
