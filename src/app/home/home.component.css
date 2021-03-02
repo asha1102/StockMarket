@@ -20,8 +20,35 @@
       margin-top:50px;
       grid-column-gap: 21px;
 
-  }
 
+  }
+  .matPrefixIcon{
+    margin-right:5px; font-size:30px
+  }
+  .searchBox{
+    margin-left: 8px; margin-bottom: 6px;
+  }
+  .overViewText{
+    font-size: 17px;font-weight: 500; margin-left: 26px;
+  }
+  .messageIcon{
+    color:black;margin-top:10px;margin-left: 10px;
+  }
+  .homeIcon{
+    color:black;margin-top:10px;margin-left: 10px;
+  }
+  .reportBlockCard{
+    height:200px;
+  }
+.portfolioCard{
+    width:685px;margin-top:20px;margin-left:29px;height:297px
+}
+.portfolioText{
+    font-size: 17px;font-weight: 500; margin-left: 26px;
+}
+.reportBlocksCard{
+    height:100px
+}
 .mat-form-field-flex > .mat-form-field-infix { padding: 0.4em 0px !important;}
 .mat-form-field-label-wrapper { top: -1.5em; }
 
@@ -31,6 +58,12 @@
    
  
    
+}
+.messageWrapper{
+    height:47px; background-color: white;
+}
+.homeWrapper{
+    height:47px;background-color: white;
 }
 .reportBlock{
     display:grid;

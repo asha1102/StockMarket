@@ -66,3 +66,28 @@ height:94%;
       grid-row-gap:10px;
       margin-bottom:10px;
   }
+  .toggleButton{
+    width: 40px;
+      height: 30px;
+       background-color: blue;
+        color: white;
+        width:50%;
+         margin: 37px auto
+  }
+  .toggleIcon{
+    margin-left: 5px; 
+     margin-top: 2px;
+     cursor:pointer
+  }
+  .ownedPropertyCard{
+    margin-left:22px;margin-right:22px
+  }
+  .recentActivityBoxCard{
+    margin-left:22px;margin-right:22px;height:30px
+  }
+  .investmentText{
+    margin-left:10px
+  }
+  .cardWrapper{
+    height:250px
+  }

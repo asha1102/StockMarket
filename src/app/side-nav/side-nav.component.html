@@ -7,9 +7,9 @@
               <mat-drawer #drawer mode="side" style="width:100px;">
               
                  <div class ="example-sideNav">
-                  <div style="width: 40px;  height: 30px; background-color: blue; color: white;width:50%; margin: 37px auto">
+                  <div class="toggleButton" >
               
-                    <mat-icon (click)="drawer.toggle()" style="margin-left: 5px;  margin-top: 2px;cursor:pointer">format_align_center</mat-icon>
+                    <mat-icon (click)="drawer.toggle()" class="toggleIcon" >format_align_center</mat-icon>
                 </div>
                     <div class="iconContainer">
                         <!-- <mat-icon (click)="loadComponent()" style="color:blue" *ngFor = "let icon of componentArray ">{{icon.name}}</mat-icon> -->
@@ -26,9 +26,9 @@
               <!-- <mat-drawer>
 
               </mat-drawer> -->
-              <div style="width: 40px;  height: 30px; background-color: blue; color: white;width:50%; margin:37px auto">
+              <div class="toggleButton">
                   <!-- <button type="button" mat-button (click)="drawer.toggle()"></button> -->
-                  <mat-icon (click)="drawer.toggle()" style="margin-left: 5px; margin-top: 2px;cursor:pointer">format_align_center</mat-icon>
+                  <mat-icon (click)="drawer.toggle()" class="toggleIcon">format_align_center</mat-icon>
               </div>
           </mat-drawer-container>
         
@@ -40,17 +40,17 @@
         <app-setting *ngIf="showSettingComponent"></app-setting>
     </div>
     <div class="rightSection">
-        <h4 style="margin-left:10px"> My Investment</h4>
-        <mat-card style="height:250px"></mat-card>
+        <h4  class="investmentText"> My Investment</h4>
+        <mat-card class="cardWrapper"></mat-card>
         <h4 style="margin-left:10px">Owned Properties</h4>
         <div class="ownedProperty">
-            <mat-card style="margin-left:22px;margin-right:22px"></mat-card>
-            <mat-card style="margin-left:22px;margin-right:22px"></mat-card>
+            <mat-card class="ownedPropertyCard" ></mat-card>
+            <mat-card class="ownedPropertyCard"></mat-card>
         </div>
         <h4 style="margin-left:10px">Recent Activities</h4>
         <div class="recentActivityBox">
-            <mat-card style="margin-left:22px;margin-right:22px;height:30px"></mat-card>
-            <mat-card style="margin-left:22px;margin-right:22px;height:30px"></mat-card>
+            <mat-card class="recentActivityBoxCard"></mat-card>
+            <mat-card class="recentActivityBoxCard"></mat-card>
 
         </div>
     </div> 
